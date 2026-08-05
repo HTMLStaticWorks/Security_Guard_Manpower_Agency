@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShieldForce Security & Manpower Agency | Enterprise Guarding Solutions</title>
+  <meta name="description"
+    content="Award-winning enterprise security guard & manpower agency providing executive protection, CCTV surveillance, industrial security, and elite guard deployment worldwide.">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper JS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <!-- Custom Core Design System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="theme-dark">
+
+  <!-- Custom Spotlight Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <!-- Background Lighting Grid -->
+  <div class="grid-bg-overlay"></div>
+  <div class="glow-orb glow-orb-cyan" style="top: 10%; left: 5%; width: 500px; height: 500px;"></div>
+  <div class="glow-orb glow-orb-gold" style="top: 40%; right: 5%; width: 600px; height: 600px;"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-shield">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <div class="logo-shield-icon">
+          <i data-lucide="shield-check" style="width: 24px; height: 24px;"></i>
+        </div>
+        <div>
+          <h1 class="logo-text-title">SHIELD<span>FORCE</span></h1>
+          <span class="logo-tagline">Security & Manpower</span>
+        </div>
+      </a>
+
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navContent">
+        <i data-lucide="menu" style="width: 28px; height: 28px;"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link-custom active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="home-v2.html">Home2</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="industries.html">Industries</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="careers.html">Careers</a></li>
+          <li class="nav-item"><a class="nav-link-custom" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 ms-lg-4 mt-3 mt-lg-0">
+          <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction">
+            <span class="fw-bold small">RTL</span>
+          </button>
+          <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
+            <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
+          </button>
+          <a href="contact.html" class="btn-shield-primary">
+            <span>Quote</span>
+            <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with 3D WebGL Shield -->
+  <section class="hero-3d-wrapper">
+    <canvas id="hero-canvas"></canvas>
+
+    <div class="container hero-content-relative">
+      <div class="row align-items-center min-vh-80">
+        <div class="col-lg-7">
+          <div class="shield-badge">
+            <span class="badge-dot"></span>
+            <span>Next-Gen Enterprise Protection</span>
+          </div>
+
+          <h1 class="display-3 fw-bold text-white mb-4 gsap-split-text">
+            Guarding Your Assets With <span class="text-transparent bg-clip-text"
+              style="background: var(--gradient-shield); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Uncompromising
+              Precision</span>
+          </h1>
+
+          <p class="fs-5 text-muted mb-5 gsap-fade-up" style="max-width: 600px;">
+            ShieldForce delivers elite tactical security personnel, executive bodyguard protection, and AI-powered CCTV
+            surveillance for Fortune 500 enterprises, high-risk industrial facilities, and global diplomatic missions.
+          </p>
+
+          <div class="d-flex flex-wrap align-items-center gap-3 gsap-fade-up">
+            <a href="contact.html" class="btn-shield-primary">
+              <i data-lucide="shield" style="width: 18px; height: 18px;"></i>
+              <span>Deploy Guard Squad</span>
+            </a>
+            <a href="services.html" class="btn-shield-secondary">
+              <span>Explore Security Matrix</span>
+              <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 gsap-fade-up">
+            <div class="col-4">
+              <h3 class="fw-bold text-white mb-0 counter-value" data-target="2500" data-suffix="+">0</h3>
+              <p class="text-muted small mb-0">Trained Personnel</p>
+            </div>
+            <div class="col-4 border-start border-end border-secondary border-opacity-25">
+              <h3 class="fw-bold text-white mb-0 counter-value" data-target="99" data-suffix=".9%">0</h3>
+              <p class="text-muted small mb-0">Client SLA Satisfaction</p>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bold text-white mb-0 counter-value" data-target="150" data-suffix="+">0</h3>
+              <p class="text-muted small mb-0">Corporate Hubs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img src="image/221.jpg" alt="Security Guard Squad"
+              class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25 gsap-fade-up">
+            <div class="stat-floating-card d-none d-md-flex" style="bottom: -20px; right: -20px;">
+              <div class="p-3 bg-primary bg-opacity-25 rounded-circle text-info">
+                <i data-lucide="award" style="width: 32px; height: 32px;"></i>
+              </div>
+              <div>
+                <h5 class="fw-bold text-white mb-0">ISO 9001:2025</h5>
+                <p class="text-muted small mb-0">Certified Security Standard</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 ps-lg-5">
+          <div class="shield-badge">
+            <span class="badge-dot"></span>
+            <span>Why ShieldForce</span>
+          </div>
+          <h2 class="section-title text-white gsap-fade-up">
+            Commanding Industry Authority in Elite Security & Manpower
+          </h2>
+          <p class="text-muted mb-4 gsap-fade-up">
+            Founded by military veterans and corporate risk directors, ShieldForce integrates strict paramilitary
+            discipline with modern threat mitigation software to deliver standard-setting security solutions.
+          </p>
+
+          <div class="row g-4 mb-4 gsap-fade-up">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="p-2 rounded bg-info bg-opacity-10 text-info">
+                  <i data-lucide="user-check" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Vetted Professionals</h6>
+                  <p class="text-muted small mb-0">100% background-checked personnel with tactical academy training.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-start gap-3">
+                <div class="p-2 rounded bg-warning bg-opacity-10 text-warning">
+                  <i data-lucide="radio" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-white mb-1">24/7 Tactical Command</h6>
+                  <p class="text-muted small mb-0">Centralized control room providing real-time GPS tracking.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn-shield-gold gsap-fade-up">
+            <span>Discover Our Legacy</span>
+            <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Matrix Section -->
+  <section class="section-padding bg-secondary bg-opacity-50">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="shield-badge mx-auto">
+          <span class="badge-dot"></span>
+          <span>Security & Manpower Solutions</span>
+        </div>
+        <h2 class="section-title text-white gsap-fade-up">Comprehensive Protection Matrix</h2>
+        <p class="section-desc gsap-fade-up">Custom-tailored security architecture designed to defend high-value
+          physical assets, executives, and enterprise infrastructure.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service Card 1 -->
+        <div class="col-md-6 col-lg-4 gsap-fade-up">
+          <div class="service-matrix-card">
+            <img src="image/333.jpg" alt="Executive Guarding" class="service-matrix-img">
+            <div class="service-matrix-content">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill fw-semibold">Corporate</span>
+                <i data-lucide="shield-alert" class="text-info"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-2">Executive Guarding</h4>
+              <p class="text-muted small mb-4">Armed and unarmed uniformed guards trained for corporate headquarters,
+                financial hubs, and embassy compounds.</p>
+              <a href="service-details.html"
+                class="text-info fw-semibold text-decoration-none d-inline-flex align-items-center gap-2">
+                <span>View Specifications</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="col-md-6 col-lg-4 gsap-fade-up">
+          <div class="service-matrix-card">
+            <img src="image/dr.jpg" alt="Industrial Security" class="service-matrix-img">
+            <div class="service-matrix-content">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span
+                  class="badge bg-warning bg-opacity-10 text-warning px-3 py-2 rounded-pill fw-semibold">Industrial</span>
+                <i data-lucide="factory" class="text-warning"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-2">Industrial Facility Defense</h4>
+              <p class="text-muted small mb-4">Perimeter monitoring, access badge auditing, asset dispatch logging, and
+                hazard perimeter response.</p>
+              <a href="service-details.html"
+                class="text-info fw-semibold text-decoration-none d-inline-flex align-items-center gap-2">
+                <span>View Specifications</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="col-md-6 col-lg-4 gsap-fade-up">
+          <div class="service-matrix-card">
+            <img src="image/55.jpg" alt="VIP Escort" class="service-matrix-img">
+            <div class="service-matrix-content">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span
+                  class="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-pill fw-semibold">Tactical</span>
+                <i data-lucide="user-x" class="text-danger"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-2">Close VIP Protection</h4>
+              <p class="text-muted small mb-4">Discrete executive protection units, armored motorcade transit, and
+                high-net-worth individual security.</p>
+              <a href="service-details.html"
+                class="text-info fw-semibold text-decoration-none d-inline-flex align-items-center gap-2">
+                <span>View Specifications</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="col-md-6 col-lg-4 gsap-fade-up">
+          <div class="service-matrix-card">
+            <img src="image/qnmfrn.jpg" alt="Event Security" class="service-matrix-img">
+            <div class="service-matrix-content">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span
+                  class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill fw-semibold">Events</span>
+                <i data-lucide="users" class="text-success"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-2">Crowd Control & Events</h4>
+              <p class="text-muted small mb-4">Concert venue security, stadium access management, high-profile gala
+                escort, and riot prevention.</p>
+              <a href="service-details.html"
+                class="text-info fw-semibold text-decoration-none d-inline-flex align-items-center gap-2">
+                <span>View Specifications</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="col-md-6 col-lg-4 gsap-fade-up">
+          <div class="service-matrix-card">
+            <img src="image/22.jpg" alt="CCTV & Surveillance" class="service-matrix-img">
+            <div class="service-matrix-content">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill fw-semibold">Technology</span>
+                <i data-lucide="eye" class="text-info"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-2">AI CCTV Monitoring</h4>
+              <p class="text-muted small mb-4">Integrated facial recognition systems, thermal night vision perimeter
+                cams, and rapid armed dispatch.</p>
+              <a href="service-details.html"
+                class="text-info fw-semibold text-decoration-none d-inline-flex align-items-center gap-2">
+                <span>View Specifications</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="col-md-6 col-lg-4 gsap-fade-up">
+          <div class="service-matrix-card">
+            <img src="image/mnf.jpg" alt="Manpower Supply" class="service-matrix-img">
+            <div class="service-matrix-content">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <span
+                  class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold">Manpower</span>
+                <i data-lucide="briefcase" class="text-primary"></i>
+              </div>
+              <h4 class="fw-bold text-white mb-2">Corporate Manpower Supply</h4>
+              <p class="text-muted small mb-4">Vetted facility staff, concierge receptionists, logistics supervisors,
+                and technical maintenance manpower.</p>
+              <a href="service-details.html"
+                class="text-info fw-semibold text-decoration-none d-inline-flex align-items-center gap-2">
+                <span>View Specifications</span>
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expanded Masonry Tactical Gallery Section (Incorporating 12 images) -->
+  <section class="section-padding bg-secondary bg-opacity-50">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="shield-badge mx-auto">
+          <span class="badge-dot"></span>
+          <span>Tactical Photo Gallery</span>
+        </div>
+        <h2 class="section-title text-white gsap-fade-up">ShieldForce Field Operations</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/0.jpg" class="glightbox">
+            <img src="image/0.jpg" alt="Guard Patrol">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Tactical Inspection</h5>
+              <p class="text-info small mb-0">Executive Security Unit</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/09].jpg" class="glightbox">
+            <img src="image/09].jpg" alt="Perimeter Check">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">High Security Perimeter</h5>
+              <p class="text-info small mb-0">Industrial Defense</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/11.jpg" class="glightbox">
+            <img src="image/11.jpg" alt="Tactical Briefing">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Command Center Sync</h5>
+              <p class="text-info small mb-0">Dispatch Team</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/2.jpg" class="glightbox">
+            <img src="image/2.jpg" alt="Corporate Security">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Corporate Tower Duty</h5>
+              <p class="text-info small mb-0">Access Management</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/3.jpg" class="glightbox">
+            <img src="image/3.jpg" alt="Event Security">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Arena Crowd Security</h5>
+              <p class="text-info small mb-0">Special Events</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/32.jpg" class="glightbox">
+            <img src="image/32.jpg" alt="VIP Escort">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">VIP Escort Squad</h5>
+              <p class="text-info small mb-0">Executive Defense</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/4.jpg" class="glightbox">
+            <img src="image/4.jpg" alt="Facility Patrol">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Logistics Hub Patrol</h5>
+              <p class="text-info small mb-0">Warehouse Security</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/5.jpg" class="glightbox">
+            <img src="image/5.jpg" alt="Surveillance Audit">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">CCTV System Audit</h5>
+              <p class="text-info small mb-0">Tech Division</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/6.jpg" class="glightbox">
+            <img src="image/6.jpg" alt="Armed Guard">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Armed Vault Protection</h5>
+              <p class="text-info small mb-0">Banking Security</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/55.jpg" class="glightbox">
+            <img src="image/55.jpg" alt="Tactical Guard Unit">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Tactical Response Team</h5>
+              <p class="text-info small mb-0">Rapid Action Squad</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery-item gsap-fade-up">
+          <a href="image/99.jpg" class="glightbox">
+            <img src="image/99.jpg" alt="Executive Command Supervision">
+            <div class="gallery-overlay">
+              <h5 class="text-white fw-bold mb-0">Command Dispatch Unit</h5>
+              <p class="text-info small mb-0">24/7 Operations</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA & Security Estimator Section -->
+  <section class="section-padding bg-gradient">
+    <div class="container">
+      <div class="glass-card p-5 border border-danger border-opacity-25">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-7">
+            <div class="shield-badge">
+              <span class="badge-dot"></span>
+              <span>Instant Estimate Calculator</span>
+            </div>
+            <h2 class="fw-bold text-white mb-3">Calculate Security Deployment Cost</h2>
+            <p class="text-muted mb-4">Select your guard manpower requirements to receive an accurate monthly SLA cost
+              estimate in real-time.</p>
+
+            <form id="security-quote-calculator">
+              <div class="mb-4">
+                <label class="form-label text-white fw-semibold">Number of Guards: <span id="calc-guards-val"
+                    class="text-danger fw-bold">5</span> Personnel</label>
+                <input type="range" class="form-range" id="calc-guards" min="1" max="50" value="5">
+              </div>
+
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <label class="form-label text-white fw-semibold">Shift Hours</label>
+                  <select class="form-select bg-dark text-white border-secondary" id="calc-shift">
+                    <option value="8">8 Hours / Day</option>
+                    <option value="12" selected>12 Hours / Day (Standard)</option>
+                    <option value="24">24/7 Full Perimeter Coverage</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label text-white fw-semibold">Guard Tier</label>
+                  <select class="form-select bg-dark text-white border-secondary" id="calc-type">
+                    <option value="1.0" selected>Unarmed Corporate Guard</option>
+                    <option value="1.4">Armed Tactical Guard</option>
+                    <option value="2.0">Executive VIP Bodyguard</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5 text-center text-lg-end border-start border-secondary border-opacity-25 ps-lg-5">
+            <span class="text-muted uppercase small tracking-wider">Estimated Monthly Budget</span>
+            <h1 class="display-4 fw-bold text-danger my-2" id="calc-total">$10,080</h1>
+            <p class="text-muted small mb-4">Includes tactical gear, insurance coverage & 24/7 GPS dispatch.</p>
+
+            <a href="contact.html" class="btn-shield-gold w-100 justify-content-center">
+              <span>Lock In This SLA Rate</span>
+              <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-shield">
+    <div class="container">
+      <div class="row g-5 mb-5">
+        <div class="col-lg-4">
+          <a class="navbar-brand navbar-brand-logo mb-3" href="index.html">
+            <div class="logo-shield-icon">
+              <i data-lucide="shield-check" style="width: 24px; height: 24px;"></i>
+            </div>
+            <div>
+              <h3 class="logo-text-title">SHIELD<span>FORCE</span></h3>
+              <span class="logo-tagline">Security & Manpower</span>
+            </div>
+          </a>
+          <p class="text-muted small mb-4">ShieldForce is an accredited global security guard and manpower solutions
+            provider serving enterprises, government infrastructure, and high-profile individuals worldwide.</p>
+          <div class="d-flex gap-2">
+            <a href="#" class="footer-social-icon" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Shield Security">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-white mb-3">Quick Navigation</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="index.html" class="text-muted text-decoration-none hover-white">Home Dark</a></li>
+            <li><a href="home-v2.html" class="text-muted text-decoration-none hover-white">Home Executive</a></li>
+            <li><a href="about.html" class="text-muted text-decoration-none hover-white">About Us</a></li>
+            <li><a href="services.html" class="text-muted text-decoration-none hover-white">Services Portfolio</a></li>
+            <li><a href="industries.html" class="text-muted text-decoration-none hover-white">Industries Served</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-white mb-3">Services</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 small">
+            <li><a href="service-details.html" class="text-muted text-decoration-none hover-white">Executive
+                Guarding</a></li>
+            <li><a href="service-details.html" class="text-muted text-decoration-none hover-white">VIP Close
+                Protection</a></li>
+            <li><a href="service-details.html" class="text-muted text-decoration-none hover-white">Industrial
+                Security</a></li>
+            <li><a href="service-details.html" class="text-muted text-decoration-none hover-white">CCTV &
+                Surveillance</a></li>
+            <li><a href="service-details.html" class="text-muted text-decoration-none hover-white">Event Crowd
+                Control</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="fw-bold text-white mb-3">24/7 Security Command Hub</h6>
+          <p class="text-muted small mb-2"><i data-lucide="map-pin" class="text-info me-2"
+              style="width: 16px; height: 16px;"></i> 750 Tactical Defense Way, Suite 400, New York, NY</p>
+          <p class="text-muted small mb-2"><i data-lucide="phone" class="text-info me-2"
+              style="width: 16px; height: 16px;"></i> +1 (800) 555-SHIELD</p>
+          <p class="text-muted small mb-3"><i data-lucide="mail" class="text-info me-2"
+              style="width: 16px; height: 16px;"></i> dispatch@shieldforce-security.com</p>
+
+          <div class="input-group">
+            <input type="email" class="form-bg-dark text-white form-control border-secondary"
+              placeholder="Enter operational email">
+            <button class="btn btn-info text-dark fw-bold px-4" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-4 border-top border-secondary border-opacity-25 text-center text-md-start">
+        <div class="col-md-6 text-muted small mb-2 mb-md-0">
+          © 2026 ShieldForce Security & Manpower Agency. All Rights Reserved.
+        </div>
+        <div class="col-md-6 text-md-end text-muted small">
+          <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-muted text-decoration-none me-3">Terms of SLA</a>
+          <a href="404.html" class="text-muted text-decoration-none">Perimeter Portal (404)</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+  <script src="js/three-hero.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
