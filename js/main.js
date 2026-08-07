@@ -70,33 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 2. Mobile Navbar Drawer & Hamburger Toggle Behavior
-  const navbarCollapse = document.getElementById('navContent');
-  const navbarToggler = document.querySelector('.navbar-toggler');
-
-  if (navbarToggler && navbarCollapse) {
-    navbarToggler.addEventListener('click', () => {
-      const isOpen = navbarCollapse.classList.contains('show');
-      if (isOpen) {
-        navbarCollapse.classList.remove('show');
-        navbarToggler.innerHTML = '<i data-lucide="menu" style="width: 28px; height: 28px;"></i>';
-      } else {
-        navbarCollapse.classList.add('show');
-        navbarToggler.innerHTML = '<i data-lucide="x" style="width: 28px; height: 28px;"></i>';
-      }
-      if (typeof lucide !== 'undefined') lucide.createIcons();
-    });
-
-    // Close mobile menu automatically after selecting a navigation link
-    const mobileNavLinks = navbarCollapse.querySelectorAll('.nav-link-custom, .btn-shield-primary, a');
-    mobileNavLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navbarCollapse.classList.remove('show');
-        navbarToggler.innerHTML = '<i data-lucide="menu" style="width: 28px; height: 28px;"></i>';
-        if (typeof lucide !== 'undefined') lucide.createIcons();
-      });
-    });
-  }
+  // (Mobile menu is now handled natively by Bootstrap Offcanvas)
 
   // 3. Initialize Lenis Smooth Scroll
   let lenis;
@@ -127,14 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('mousemove', (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
-      
+
       cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
     });
 
     function animateFollower() {
       followerX += (mouseX - followerX) * 0.15;
       followerY += (mouseY - followerY) * 0.15;
-      
+
       follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0) translate(-50%, -50%)`;
       requestAnimationFrame(animateFollower);
     }
@@ -203,7 +177,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (entry.isIntersecting) {
           const target = parseInt(entry.target.getAttribute('data-target') || '100');
           const suffix = entry.target.getAttribute('data-suffix') || '';
-          
+
           if (typeof CountUp !== 'undefined') {
             const countUp = new CountUp.CountUp(entry.target, target, {
               duration: 2.5,
@@ -254,23 +228,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateEstimate() {
       if (!guardRange || !hoursSelect || !typeSelect || !totalDisplay) return;
-      
+
       const numGuards = parseInt(guardRange.value);
       guardValDisplay.innerText = numGuards;
-      
+
       const hoursMultiplier = parseFloat(hoursSelect.value);
       const rateMultiplier = parseFloat(typeSelect.value);
-      
+
       // Base hourly rate per guard = $28
       const monthlyTotal = Math.round(numGuards * 28 * hoursMultiplier * rateMultiplier * 30);
-      
+
       totalDisplay.innerText = '$' + monthlyTotal.toLocaleString();
     }
 
     if (guardRange) guardRange.addEventListener('input', updateEstimate);
     if (hoursSelect) hoursSelect.addEventListener('change', updateEstimate);
     if (typeSelect) typeSelect.addEventListener('change', updateEstimate);
-    
+
     updateEstimate();
   }
 

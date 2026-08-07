@@ -84,10 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
   shieldGroup.add(emblemMesh);
 
   // Offset shield position for split-hero layout on desktop
+  // Offset shield position for split-hero layout on desktop; position below text on mobile/tablet
   if (window.innerWidth > 992) {
     shieldGroup.position.set(4.5, 0, 0);
   } else {
-    shieldGroup.position.set(0, 1.5, -4);
+    shieldGroup.position.set(0, -4.2, -2);
   }
 
   scene.add(shieldGroup);
@@ -167,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Shield Motion
     shieldGroup.rotation.y = Math.sin(elapsedTime * 0.5) * 0.3 + targetX * 0.5;
     shieldGroup.rotation.x = Math.cos(elapsedTime * 0.4) * 0.15 - targetY * 0.3;
-    shieldGroup.position.y = Math.sin(elapsedTime * 1.2) * 0.35 + (window.innerWidth <= 992 ? 1.5 : 0);
+    shieldGroup.position.y = Math.sin(elapsedTime * 1.2) * 0.35 + (window.innerWidth <= 992 ? -4.2 : 0);
 
     // Emblem Rotation
     emblemMesh.rotation.y = elapsedTime * 1.5;
@@ -196,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.innerWidth > 992) {
       shieldGroup.position.set(4.5, 0, 0);
     } else {
-      shieldGroup.position.set(0, 1.5, -4);
+      shieldGroup.position.set(0, -4.2, -2);
     }
   });
 });
