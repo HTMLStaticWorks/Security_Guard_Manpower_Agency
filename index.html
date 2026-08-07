@@ -49,11 +49,11 @@
         </div>
       </a>
 
-      <button class="navbar-toggler border-0 text-white d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
         <i data-lucide="menu" style="width: 28px; height: 28px;"></i>
       </button>
 
-      <div class="collapse navbar-collapse d-none d-xl-flex" id="navContent">
+      <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-lg-2">
           <li class="nav-item"><a class="nav-link-custom active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link-custom" href="home-v2.html">Home2</a></li>
@@ -78,42 +78,6 @@
       </div>
     </div>
   </nav>
-
-  <!-- Mobile Offcanvas Menu (Centered Navlinks) -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel" style="background: var(--bg-main) !important; border-left: 1px solid var(--border-glass);">
-    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 p-4">
-      <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2 text-white" id="mobileOffcanvasLabel">
-        <div class="logo-shield-icon bg-gradient-primary rounded p-2 d-inline-flex align-items-center justify-content-center">
-          <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
-        </div>
-        SHIELDFORCE
-      </h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body d-flex flex-column p-4">
-      <ul class="navbar-nav mb-auto mt-auto gap-4 text-center w-100">
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="index.html" data-bs-dismiss="offcanvas">Home</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="home-v2.html" data-bs-dismiss="offcanvas">Home2</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="services.html" data-bs-dismiss="offcanvas">Services</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="industries.html" data-bs-dismiss="offcanvas">Industries</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="careers.html" data-bs-dismiss="offcanvas">Careers</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="contact.html" data-bs-dismiss="offcanvas">Contact</a></li>
-      </ul>
-      <div class="d-flex align-items-center justify-content-center gap-3 w-100 mt-5 pt-4 border-top border-secondary border-opacity-25">
-        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction" data-bs-dismiss="offcanvas">
-          <span class="fw-bold small">RTL</span>
-        </button>
-        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme" data-bs-dismiss="offcanvas">
-          <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
-        </button>
-        <a href="contact.html" class="btn-shield-primary">
-          <span>Quote</span>
-          <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <!-- Hero Section with Right-Side Video Showcase -->
   <section class="section-padding position-relative overflow-hidden" style="padding-top: 140px;">
