@@ -512,9 +512,11 @@ body.theme-light .page-header-hero .section-desc {
 /* Reset & Smooth Scrolling */
 html,
 body {
+  position: relative;
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden !important;
+  overflow-x: clip !important;
 }
 
 html.lenis,
@@ -634,6 +636,8 @@ body.hovering-interactive .custom-cursor-follower {
   z-index: 0;
   opacity: 0.5;
   animation: orbPulse 8s infinite alternate ease-in-out;
+  max-width: 90vw;
+  max-height: 90vw;
 }
 
 .glow-orb-cyan {
@@ -2064,26 +2068,6 @@ body.theme-dark .glass-card span.text-muted {
     justify-content: center !important;
   }
 
-  .navbar-shield .navbar-collapse {
-    background: #0A0F1D !important;
-    background: var(--bg-secondary) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid var(--border-glass) !important;
-    border-radius: 16px !important;
-    padding: 20px !important;
-    margin-top: 12px !important;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
-  }
-
-  [data-bs-theme="light"] .navbar-shield .navbar-collapse,
-  [data-theme="light"] .navbar-shield .navbar-collapse,
-  body.theme-light .navbar-shield .navbar-collapse {
-    background: #FFFFFF !important;
-    border-color: #CBD5E1 !important;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
-  }
-
   .navbar-shield .navbar-nav {
     flex-direction: column !important;
     align-items: stretch !important;
@@ -2136,21 +2120,6 @@ body.theme-dark .glass-card span.text-muted {
   .navbar-shield .nav-link-custom.active::after {
     display: none !important;
   }
-}
-
-/* Offcanvas Drawer Fallback Styling */
-.offcanvas {
-  background-color: #0A0F1D !important;
-  color: #F8FAFC !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-[data-bs-theme="light"] .offcanvas,
-[data-theme="light"] .offcanvas,
-body.theme-light .offcanvas {
-  background-color: #FFFFFF !important;
-  color: #0F172A !important;
-  border-left: 1px solid #CBD5E1 !important;
 }
 
 
@@ -2261,4 +2230,22 @@ body.theme-light .home2-matrix-card {
 
 .home2-matrix-body a {
   margin-top: auto !important;
+}
+
+/* ==========================================================================
+   OFFCANVAS MOBILE FIX
+   ========================================================================== */
+body {
+  padding-right: 0 !important;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas,
+  .offcanvas-end,
+  .offcanvas-start {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-left: none !important;
+    border-right: none !important;
+  }
 }
