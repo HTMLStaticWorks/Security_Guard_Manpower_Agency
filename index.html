@@ -49,7 +49,8 @@
         </div>
       </a>
 
-      <button class="navbar-toggler border-0 text-white d-xl-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
+      <button class="navbar-toggler border-0 text-white d-xl-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
         <i data-lucide="menu" style="width: 28px; height: 28px;"></i>
       </button>
 
@@ -79,32 +80,45 @@
     </div>
   </nav>
 
-  <!-- Mobile Offcanvas Menu (Centered Navlinks) -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel" style="background: var(--bg-primary) !important; border-left: 1px solid var(--border-glass);">
-    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 p-4">
-      <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2 text-white" id="mobileOffcanvasLabel">
-        <div class="logo-shield-icon bg-gradient-primary rounded p-2 d-inline-flex align-items-center justify-content-center">
+  <!-- Mobile Offcanvas Menu (Centered Navlinks & Action Buttons) -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel">
+    <div
+      class="offcanvas-header border-bottom border-secondary border-opacity-25 p-4 d-flex justify-content-between align-items-center">
+      <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2 text-white m-0" id="mobileOffcanvasLabel">
+        <div
+          class="logo-shield-icon bg-gradient-primary rounded p-2 d-inline-flex align-items-center justify-content-center">
           <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
         </div>
-        SHIELDFORCE
+        <span>SHIELDFORCE</span>
       </h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
+        aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body d-flex flex-column p-4">
-      <ul class="navbar-nav gap-4 align-items-center text-center w-100">
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="index.html" data-bs-dismiss="offcanvas">Home</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="home-v2.html" data-bs-dismiss="offcanvas">Home2</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="services.html" data-bs-dismiss="offcanvas">Services</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="industries.html" data-bs-dismiss="offcanvas">Industries</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="careers.html" data-bs-dismiss="offcanvas">Careers</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white" href="contact.html" data-bs-dismiss="offcanvas">Contact</a></li>
+    <div class="offcanvas-body d-flex flex-column align-items-center justify-content-between p-4">
+      <ul class="navbar-nav gap-3 align-items-center text-center w-100 my-auto">
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="index.html"
+            data-bs-dismiss="offcanvas">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="home-v2.html"
+            data-bs-dismiss="offcanvas">Home2</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="about.html"
+            data-bs-dismiss="offcanvas">About</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="services.html"
+            data-bs-dismiss="offcanvas">Services</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="industries.html"
+            data-bs-dismiss="offcanvas">Industries</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="careers.html"
+            data-bs-dismiss="offcanvas">Careers</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="contact.html"
+            data-bs-dismiss="offcanvas">Contact</a></li>
       </ul>
-      <div class="d-flex align-items-center justify-content-center gap-3 w-100 mt-4 pt-3 border-top border-secondary border-opacity-25">
-        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction" data-bs-dismiss="offcanvas">
+      <div
+        class="offcanvas-actions d-flex align-items-center justify-content-center gap-3 w-100 pt-3 border-top border-secondary border-opacity-25">
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction"
+          data-bs-dismiss="offcanvas">
           <span class="fw-bold small">RTL</span>
         </button>
-        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme" data-bs-dismiss="offcanvas">
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme"
+          data-bs-dismiss="offcanvas">
           <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
         </button>
         <a href="contact.html" class="btn-shield-primary">
@@ -270,11 +284,13 @@
         <!-- Service Card 1 -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="service-matrix-card d-flex flex-column h-100 w-100">
-            <img src="image/333.jpg" alt="Executive Guarding" class="service-matrix-img">
+            <div class="service-matrix-img-wrapper">
+              <img src="image/333.jpg" alt="Executive Guarding" class="service-matrix-img">
+            </div>
             <div class="service-matrix-content p-4 d-flex flex-column flex-grow-1">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="service-card-header d-flex justify-content-between align-items-center mb-3">
                 <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill fw-semibold">Corporate</span>
-                <i data-lucide="shield-alert" class="text-info"></i>
+                <i data-lucide="shield-alert" class="text-info" style="width: 22px; height: 22px;"></i>
               </div>
               <h4 class="fw-bold text-white mb-2">Executive Guarding</h4>
               <p class="text-muted small mb-4 flex-grow-1">Armed and unarmed uniformed guards trained for corporate
@@ -292,12 +308,14 @@
         <!-- Service Card 2 -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="service-matrix-card d-flex flex-column h-100 w-100">
-            <img src="image/dr.jpg" alt="Industrial Security" class="service-matrix-img">
+            <div class="service-matrix-img-wrapper">
+              <img src="image/dr.jpg" alt="Industrial Security" class="service-matrix-img">
+            </div>
             <div class="service-matrix-content p-4 d-flex flex-column flex-grow-1">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="service-card-header d-flex justify-content-between align-items-center mb-3">
                 <span
                   class="badge bg-warning bg-opacity-10 text-warning px-3 py-2 rounded-pill fw-semibold">Industrial</span>
-                <i data-lucide="factory" class="text-warning"></i>
+                <i data-lucide="factory" class="text-warning" style="width: 22px; height: 22px;"></i>
               </div>
               <h4 class="fw-bold text-white mb-2">Industrial Facility Defense</h4>
               <p class="text-muted small mb-4 flex-grow-1">Perimeter monitoring, Industrial access badge auditing, asset
@@ -315,12 +333,14 @@
         <!-- Service Card 3 -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="service-matrix-card d-flex flex-column h-100 w-100">
-            <img src="image/55.jpg" alt="VIP Escort" class="service-matrix-img">
+            <div class="service-matrix-img-wrapper">
+              <img src="image/55.jpg" alt="VIP Escort" class="service-matrix-img">
+            </div>
             <div class="service-matrix-content p-4 d-flex flex-column flex-grow-1">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="service-card-header d-flex justify-content-between align-items-center mb-3">
                 <span
                   class="badge bg-danger bg-opacity-10 text-danger px-3 py-2 rounded-pill fw-semibold">Tactical</span>
-                <i data-lucide="user-x" class="text-danger"></i>
+                <i data-lucide="user-x" class="text-danger" style="width: 22px; height: 22px;"></i>
               </div>
               <h4 class="fw-bold text-white mb-2">Close VIP Protection</h4>
               <p class="text-muted small mb-4 flex-grow-1">Discrete executive protection units, armored motorcade
@@ -338,12 +358,14 @@
         <!-- Service Card 4 -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="service-matrix-card d-flex flex-column h-100 w-100">
-            <img src="image/qnmfrn.jpg" alt="Event Security" class="service-matrix-img">
+            <div class="service-matrix-img-wrapper">
+              <img src="image/qnmfrn.jpg" alt="Event Security" class="service-matrix-img">
+            </div>
             <div class="service-matrix-content p-4 d-flex flex-column flex-grow-1">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="service-card-header d-flex justify-content-between align-items-center mb-3">
                 <span
                   class="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill fw-semibold">Events</span>
-                <i data-lucide="users" class="text-success"></i>
+                <i data-lucide="users" class="text-success" style="width: 22px; height: 22px;"></i>
               </div>
               <h4 class="fw-bold text-white mb-2">Crowd Control & Events</h4>
               <p class="text-muted small mb-4 flex-grow-1">Concert venue security, stadium access management,
@@ -361,11 +383,13 @@
         <!-- Service Card 5 -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="service-matrix-card d-flex flex-column h-100 w-100">
-            <img src="image/22.jpg" alt="CCTV & Surveillance" class="service-matrix-img">
+            <div class="service-matrix-img-wrapper">
+              <img src="image/22.jpg" alt="CCTV & Surveillance" class="service-matrix-img">
+            </div>
             <div class="service-matrix-content p-4 d-flex flex-column flex-grow-1">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="service-card-header d-flex justify-content-between align-items-center mb-3">
                 <span class="badge bg-info bg-opacity-10 text-info px-3 py-2 rounded-pill fw-semibold">Technology</span>
-                <i data-lucide="eye" class="text-info"></i>
+                <i data-lucide="eye" class="text-info" style="width: 22px; height: 22px;"></i>
               </div>
               <h4 class="fw-bold text-white mb-2">AI CCTV Monitoring</h4>
               <p class="text-muted small mb-4 flex-grow-1">Integrated facial recognition systems, thermal night vision
@@ -383,12 +407,14 @@
         <!-- Service Card 6 -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="service-matrix-card d-flex flex-column h-100 w-100">
-            <img src="image/mnf.jpg" alt="Manpower Supply" class="service-matrix-img">
+            <div class="service-matrix-img-wrapper">
+              <img src="image/mnf.jpg" alt="Manpower Supply" class="service-matrix-img">
+            </div>
             <div class="service-matrix-content p-4 d-flex flex-column flex-grow-1">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div class="service-card-header d-flex justify-content-between align-items-center mb-3">
                 <span
                   class="badge bg-primary bg-opacity-10 text-primary px-3 py-2 rounded-pill fw-semibold">Manpower</span>
-                <i data-lucide="briefcase" class="text-primary"></i>
+                <i data-lucide="briefcase" class="text-primary" style="width: 22px; height: 22px;"></i>
               </div>
               <h4 class="fw-bold text-white mb-2">Corporate Manpower Supply</h4>
               <p class="text-muted small mb-4 flex-grow-1">Vetted facility staff, concierge receptionists, logistics
@@ -615,7 +641,7 @@
         <h2 class="section-title text-white gsap-fade-up">Trusted By Industry Risk Leaders</h2>
       </div>
 
-      <div class="row g-4 align-items-stretch">
+      <div class="row g-4 align-items-stretch justify-content-center">
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card p-4 w-100 h-100 d-flex flex-column justify-content-between">
             <div>
@@ -627,7 +653,7 @@
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
               </div>
               <p class="text-muted small mb-4">"ShieldForce's executive guard squads transformed our corporate campus
-                security. Their officers exhibit military discipline and impeccable reception etiquette."</p>
+                security. Their officers exhibit military discipline and impeccable reception ."</p>
             </div>
             <div class="d-flex align-items-center gap-3 mt-auto">
               <img src="image/jnddn.jpg" alt="Col. Robert Sterling" class="rounded-circle"
@@ -839,14 +865,9 @@
         </div>
       </div>
 
-      <div class="row pt-4 border-top border-secondary border-opacity-25 text-center text-md-start">
-        <div class="col-md-6 text-muted small mb-2 mb-md-0">
+      <div class="row pt-4 border-top border-secondary border-opacity-25 text-center">
+        <div class="col-12 text-muted small">
           © 2026 ShieldForce Security & Manpower Agency. All Rights Reserved.
-        </div>
-        <div class="col-md-6 text-md-end text-muted small">
-          <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
-          <a href="#" class="text-muted text-decoration-none me-3">Terms of SLA</a>
-          <a href="404.html" class="text-muted text-decoration-none">Perimeter Portal (404)</a>
         </div>
       </div>
     </div>

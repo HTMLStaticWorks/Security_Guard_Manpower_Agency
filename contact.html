@@ -76,101 +76,105 @@
   <!-- Contact Form & Info Grid -->
   <section class="section-padding bg-secondary bg-opacity-50">
     <div class="container">
-      <div class="row g-5">
-        <!-- Contact Information -->
-        <div class="col-lg-5">
-          <div class="glass-card p-4 mb-4">
-            <h4 class="fw-bold text-white mb-4"><i data-lucide="shield" class="text-info me-2"></i>Global Headquarters</h4>
+      <div class="row g-4 align-items-stretch">
+        <!-- Contact Information Card -->
+        <div class="col-lg-5 d-flex">
+          <div class="glass-card p-4 p-md-5 h-100 w-100 d-flex flex-column justify-content-between">
+            <div>
+              <h4 class="fw-bold text-white mb-4"><i data-lucide="shield" class="text-info me-2"></i>Global Headquarters</h4>
 
-            <div class="d-flex align-items-start gap-3 mb-4">
-              <div class="p-3 bg-info bg-opacity-10 text-info rounded-3">
-                <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+              <div class="d-flex align-items-start gap-3 mb-4 text-start">
+                <div class="p-3 bg-info bg-opacity-10 text-info rounded-3 flex-shrink-0">
+                  <i data-lucide="map-pin" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Command Hub Address</h6>
+                  <p class="text-muted small mb-0">750 Tactical Defense Way, Suite 400<br>New York, NY 10001, USA</p>
+                </div>
               </div>
-              <div>
-                <h6 class="fw-bold text-white mb-1">Command Hub Address</h6>
-                <p class="text-muted small mb-0">750 Tactical Defense Way, Suite 400<br>New York, NY 10001, USA</p>
+
+              <div class="d-flex align-items-start gap-3 mb-4 text-start">
+                <div class="p-3 bg-warning bg-opacity-10 text-warning rounded-3 flex-shrink-0">
+                  <i data-lucide="phone" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Emergency Dispatch Hotline</h6>
+                  <p class="text-muted small mb-0">+1 (800) 555-SHIELD (24/7 Live)</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4 text-start">
+                <div class="p-3 bg-success bg-opacity-10 text-success rounded-3 flex-shrink-0">
+                  <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold text-white mb-1">Official Proposal Enquiries</h6>
+                  <p class="text-muted small mb-0">dispatch@shieldforce-security.com</p>
+                </div>
               </div>
             </div>
 
-            <div class="d-flex align-items-start gap-3 mb-4">
-              <div class="p-3 bg-warning bg-opacity-10 text-warning rounded-3">
-                <i data-lucide="phone" style="width: 24px; height: 24px;"></i>
+            <!-- Operational Hubs List -->
+            <div class="pt-4 border-top border-secondary border-opacity-25 mt-auto">
+              <h6 class="fw-bold text-info mb-3 text-start">Global Command Hubs</h6>
+              <div class="d-flex flex-wrap gap-2 text-muted small">
+                <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇺🇸 New York</span>
+                <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇬🇧 London</span>
+                <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇦🇪 Dubai</span>
+                <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇸🇬 Singapore</span>
+                <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇯🇵 Tokyo</span>
               </div>
-              <div>
-                <h6 class="fw-bold text-white mb-1">Emergency Dispatch Hotline</h6>
-                <p class="text-muted small mb-0">+1 (800) 555-SHIELD (24/7 Live)</p>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-start gap-3">
-              <div class="p-3 bg-success bg-opacity-10 text-success rounded-3">
-                <i data-lucide="mail" style="width: 24px; height: 24px;"></i>
-              </div>
-              <div>
-                <h6 class="fw-bold text-white mb-1">Official Proposal Enquiries</h6>
-                <p class="text-muted small mb-0">dispatch@shieldforce-security.com</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Operational Hubs List -->
-          <div class="glass-card p-4">
-            <h6 class="fw-bold text-info mb-3">Global Command Hubs</h6>
-            <div class="d-flex flex-wrap gap-2 text-muted small">
-              <span class="badge bg-secondary border border-secondary">🇺🇸 New York</span>
-              <span class="badge bg-secondary border border-secondary">🇬🇧 London</span>
-              <span class="badge bg-secondary border border-secondary">🇦🇪 Dubai</span>
-              <span class="badge bg-secondary border border-secondary">🇸🇬 Singapore</span>
-              <span class="badge bg-secondary border border-secondary">🇯🇵 Tokyo</span>
             </div>
           </div>
         </div>
 
-        <!-- Interactive Contact Form -->
-        <div class="col-lg-7">
-          <div class="glass-card p-5">
-            <h3 class="fw-bold text-white mb-2">Request Security Proposal</h3>
-            <p class="text-muted small mb-4">Fill out your facility requirements and our senior dispatch commander will respond within 30 minutes.</p>
+        <!-- Interactive Contact Form Card -->
+        <div class="col-lg-7 d-flex">
+          <div class="glass-card p-4 p-md-5 h-100 w-100 d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="fw-bold text-white mb-2">Request Security Proposal</h3>
+              <p class="text-muted small mb-4">Fill out your facility requirements and our senior dispatch commander will respond within 30 minutes.</p>
 
-            <form onsubmit="alert('Proposal Request Received! A ShieldForce Security Director will contact your office shortly.'); return false;">
-              <div class="row g-3 mb-3">
-                <div class="col-sm-6">
-                  <label class="form-label text-white small fw-semibold">Your Name *</label>
-                  <input type="text" class="form-control bg-dark text-white border-secondary" required placeholder="Alexander Vance">
+              <form onsubmit="alert('Proposal Request Received! A ShieldForce Security Director will contact your office shortly.'); return false;">
+                <div class="row g-3 mb-3">
+                  <div class="col-sm-6">
+                    <label class="form-label text-white small fw-semibold">Your Name *</label>
+                    <input type="text" class="form-control bg-dark text-white border-secondary" required placeholder="Alexander Vance">
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label text-white small fw-semibold">Corporate Email *</label>
+                    <input type="email" class="form-control bg-dark text-white border-secondary" required placeholder="a.vance@company.com">
+                  </div>
                 </div>
-                <div class="col-sm-6">
-                  <label class="form-label text-white small fw-semibold">Corporate Email *</label>
-                  <input type="email" class="form-control bg-dark text-white border-secondary" required placeholder="a.vance@company.com">
-                </div>
-              </div>
 
-              <div class="row g-3 mb-3">
-                <div class="col-sm-6">
-                  <label class="form-label text-white small fw-semibold">Phone Number *</label>
-                  <input type="tel" class="form-control bg-dark text-white border-secondary" required placeholder="+1 (555) 000-0000">
+                <div class="row g-3 mb-3">
+                  <div class="col-sm-6">
+                    <label class="form-label text-white small fw-semibold">Phone Number *</label>
+                    <input type="tel" class="form-control bg-dark text-white border-secondary" required placeholder="+1 (555) 000-0000">
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label text-white small fw-semibold">Facility / Sector Type</label>
+                    <select class="form-select bg-dark text-white border-secondary">
+                      <option>Corporate Office Tower</option>
+                      <option>Industrial Plant / Warehouse</option>
+                      <option>Financial Institution / Bank</option>
+                      <option>Executive VIP Escort</option>
+                      <option>Event Crowd Management</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="col-sm-6">
-                  <label class="form-label text-white small fw-semibold">Facility / Sector Type</label>
-                  <select class="form-select bg-dark text-white border-secondary">
-                    <option>Corporate Office Tower</option>
-                    <option>Industrial Plant / Warehouse</option>
-                    <option>Financial Institution / Bank</option>
-                    <option>Executive VIP Escort</option>
-                    <option>Event Crowd Management</option>
-                  </select>
+
+                <div class="mb-4">
+                  <label class="form-label text-white small fw-semibold">Special Instructions or Scope of Work</label>
+                  <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Detail your guard headcount, shift hours, and security concerns..."></textarea>
                 </div>
-              </div>
 
-              <div class="mb-4">
-                <label class="form-label text-white small fw-semibold">Special Instructions or Scope of Work</label>
-                <textarea class="form-control bg-dark text-white border-secondary" rows="4" placeholder="Detail your guard headcount, shift hours, and security concerns..."></textarea>
-              </div>
-
-              <button type="submit" class="btn-shield-gold w-100 justify-content-center">
-                <span>Dispatch Proposal Request</span>
-                <i data-lucide="send" style="width: 18px;"></i>
-              </button>
-            </form>
+                <button type="submit" class="btn-shield-gold w-100 justify-content-center">
+                  <span>Dispatch Proposal Request</span>
+                  <i data-lucide="send" style="width: 18px;"></i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -301,14 +305,9 @@
         </div>
       </div>
 
-      <div class="row pt-4 border-top border-secondary border-opacity-25 text-center text-md-start">
-        <div class="col-md-6 text-muted small mb-2 mb-md-0">
+      <div class="row pt-4 border-top border-secondary border-opacity-25 text-center">
+        <div class="col-12 text-muted small">
           © 2026 ShieldForce Security & Manpower Agency. All Rights Reserved.
-        </div>
-        <div class="col-md-6 text-md-end text-muted small">
-          <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
-          <a href="#" class="text-muted text-decoration-none me-3">Terms of SLA</a>
-          <a href="404.html" class="text-muted text-decoration-none">Perimeter Portal (404)</a>
         </div>
       </div>
     </div>
