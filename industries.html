@@ -28,11 +28,12 @@
         </div>
       </a>
 
-      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0 text-white d-xl-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
         <i data-lucide="menu" style="width: 28px; height: 28px;"></i>
       </button>
 
-      <div class="collapse navbar-collapse" id="navContent">
+      <div class="collapse navbar-collapse d-none d-xl-flex" id="navContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-lg-2">
           <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link-custom" href="home-v2.html">Home2</a></li>
@@ -44,7 +45,7 @@
         </ul>
         <div class="d-flex align-items-center gap-2 ms-lg-4 mt-3 mt-lg-0">
           <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction">
-            <span class="fw-bold small">RTL</span>
+            <i data-lucide="arrow-left-right" style="width: 18px; height: 18px;"></i>
           </button>
           <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
             <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
@@ -57,6 +58,42 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 p-4 d-flex justify-content-between align-items-center">
+      <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2 text-white m-0" id="mobileOffcanvasLabel">
+        <div class="logo-shield-icon bg-gradient-primary rounded p-2 d-inline-flex align-items-center justify-content-center">
+          <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
+        </div>
+        <span>SHIELDFORCE</span>
+      </h5>
+      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column align-items-center justify-content-between p-4">
+      <ul class="navbar-nav gap-3 align-items-center text-center w-100 my-auto">
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="index.html" data-bs-dismiss="offcanvas">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="home-v2.html" data-bs-dismiss="offcanvas">Home2</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="services.html" data-bs-dismiss="offcanvas">Services</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2 active" href="industries.html" data-bs-dismiss="offcanvas">Industries</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="careers.html" data-bs-dismiss="offcanvas">Careers</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="contact.html" data-bs-dismiss="offcanvas">Contact</a></li>
+      </ul>
+      <div class="offcanvas-actions d-flex align-items-center justify-content-center gap-3 w-100 pt-3 border-top border-secondary border-opacity-25">
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction" data-bs-dismiss="offcanvas">
+          <i data-lucide="arrow-left-right" style="width: 18px; height: 18px;"></i>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme" data-bs-dismiss="offcanvas">
+          <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
+        </button>
+        <a href="contact.html" class="btn-shield-primary">
+          <span>Quote</span>
+          <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Page Header -->
   <section class="page-header-hero position-relative overflow-hidden">
@@ -82,7 +119,7 @@
         <!-- Banking -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card overflow-hidden h-100 w-100 d-flex flex-column">
-            <img src="image/d.jpg" alt="Banking & Finance Security" style="height: 200px; width: 100%; object-fit: cover;">
+            <img src="image/d.jpg" alt="Banking & Finance Security" class="industry-card-img">
             <div class="p-4 d-flex flex-column flex-grow-1">
               <div class="p-2 bg-danger bg-opacity-10 text-danger rounded-3 d-inline-block mb-3" style="width: fit-content;">
                 <i data-lucide="landmark" style="width: 24px; height: 24px;"></i>
@@ -97,7 +134,7 @@
         <!-- High Tech -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card overflow-hidden h-100 w-100 d-flex flex-column">
-            <img src="image/ddsf.jpg" alt="Tech & Data Center Security" style="height: 200px; width: 100%; object-fit: cover;">
+            <img src="image/ddsf.jpg" alt="Tech & Data Center Security" class="industry-card-img">
             <div class="p-4 d-flex flex-column flex-grow-1">
               <div class="p-2 bg-warning bg-opacity-10 text-warning rounded-3 d-inline-block mb-3" style="width: fit-content;">
                 <i data-lucide="cpu" style="width: 24px; height: 24px;"></i>
@@ -112,7 +149,7 @@
         <!-- Healthcare -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card overflow-hidden h-100 w-100 d-flex flex-column">
-            <img src="image/dr.jpg" alt="Healthcare & Hospital Security" style="height: 200px; width: 100%; object-fit: cover;">
+            <img src="image/dr.jpg" alt="Healthcare & Hospital Security" class="industry-card-img">
             <div class="p-4 d-flex flex-column flex-grow-1">
               <div class="p-2 bg-danger bg-opacity-10 text-danger rounded-3 d-inline-block mb-3" style="width: fit-content;">
                 <i data-lucide="activity" style="width: 24px; height: 24px;"></i>
@@ -127,7 +164,7 @@
         <!-- Real Estate -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card overflow-hidden h-100 w-100 d-flex flex-column">
-            <img src="image/c.jpg" alt="Luxury Real Estate Security" style="height: 200px; width: 100%; object-fit: cover;">
+            <img src="image/c.jpg" alt="Luxury Real Estate Security" class="industry-card-img">
             <div class="p-4 d-flex flex-column flex-grow-1">
               <div class="p-2 bg-success bg-opacity-10 text-success rounded-3 d-inline-block mb-3" style="width: fit-content;">
                 <i data-lucide="building-2" style="width: 24px; height: 24px;"></i>
@@ -142,7 +179,7 @@
         <!-- Infrastructure -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card overflow-hidden h-100 w-100 d-flex flex-column">
-            <img src="image/ddf.jpg" alt="Energy & Infrastructure Security" style="height: 200px; width: 100%; object-fit: cover;">
+            <img src="image/ddf.jpg" alt="Energy & Infrastructure Security" class="industry-card-img">
             <div class="p-4 d-flex flex-column flex-grow-1">
               <div class="p-2 bg-primary bg-opacity-10 text-primary rounded-3 d-inline-block mb-3" style="width: fit-content;">
                 <i data-lucide="zap" style="width: 24px; height: 24px;"></i>
@@ -157,7 +194,7 @@
         <!-- Transportation -->
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card overflow-hidden h-100 w-100 d-flex flex-column">
-            <img src="image/qnmfrn.jpg" alt="Airports & Logistics Hubs Security" style="height: 200px; width: 100%; object-fit: cover;">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.dj5ur4kZRsrvosPrWISb4gHaD4?r=0&w=1200&h=630&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Airports & Logistics Hubs Security" class="industry-card-img">
             <div class="p-4 d-flex flex-column flex-grow-1">
               <div class="p-2 bg-danger bg-opacity-10 text-danger rounded-3 d-inline-block mb-3" style="width: fit-content;">
                 <i data-lucide="plane" style="width: 24px; height: 24px;"></i>

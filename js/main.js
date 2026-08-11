@@ -267,4 +267,32 @@ document.addEventListener('DOMContentLoaded', () => {
       selector: '.glightbox'
     });
   }
+
+  // 12. Global Floating Scroll-To-Top Button Controller
+  let scrollTopBtn = document.querySelector('.scroll-to-top-btn');
+  if (!scrollTopBtn) {
+    scrollTopBtn = document.createElement('button');
+    scrollTopBtn.className = 'scroll-to-top-btn';
+    scrollTopBtn.setAttribute('aria-label', 'Scroll to top');
+    scrollTopBtn.setAttribute('title', 'Scroll to top');
+    scrollTopBtn.innerHTML = '<i data-lucide="chevron-up" style="width: 24px; height: 24px;"></i>';
+    document.body.appendChild(scrollTopBtn);
+    if (typeof lucide !== 'undefined') lucide.createIcons();
+  }
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 280) {
+      scrollTopBtn.classList.add('visible');
+    } else {
+      scrollTopBtn.classList.remove('visible');
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    if (typeof lenis !== 'undefined' && lenis) {
+      lenis.scrollTo(0, { duration: 1.2 });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
 });

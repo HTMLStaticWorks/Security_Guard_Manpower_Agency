@@ -28,11 +28,12 @@
         </div>
       </a>
 
-      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler border-0 text-white d-xl-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
         <i data-lucide="menu" style="width: 28px; height: 28px;"></i>
       </button>
 
-      <div class="collapse navbar-collapse" id="navContent">
+      <div class="collapse navbar-collapse d-none d-xl-flex" id="navContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-lg-2">
           <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link-custom" href="home-v2.html">Home2</a></li>
@@ -44,7 +45,7 @@
         </ul>
         <div class="d-flex align-items-center gap-2 ms-lg-4 mt-3 mt-lg-0">
           <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction">
-            <span class="fw-bold small">RTL</span>
+            <i data-lucide="arrow-left-right" style="width: 18px; height: 18px;"></i>
           </button>
           <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
             <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
@@ -57,6 +58,42 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 p-4 d-flex justify-content-between align-items-center">
+      <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2 text-white m-0" id="mobileOffcanvasLabel">
+        <div class="logo-shield-icon bg-gradient-primary rounded p-2 d-inline-flex align-items-center justify-content-center">
+          <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
+        </div>
+        <span>SHIELDFORCE</span>
+      </h5>
+      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column align-items-center justify-content-between p-4">
+      <ul class="navbar-nav gap-3 align-items-center text-center w-100 my-auto">
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="index.html" data-bs-dismiss="offcanvas">Home</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="home-v2.html" data-bs-dismiss="offcanvas">Home2</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="services.html" data-bs-dismiss="offcanvas">Services</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="industries.html" data-bs-dismiss="offcanvas">Industries</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="careers.html" data-bs-dismiss="offcanvas">Careers</a></li>
+        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2 active" href="contact.html" data-bs-dismiss="offcanvas">Contact</a></li>
+      </ul>
+      <div class="offcanvas-actions d-flex align-items-center justify-content-center gap-3 w-100 pt-3 border-top border-secondary border-opacity-25">
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction" data-bs-dismiss="offcanvas">
+          <i data-lucide="arrow-left-right" style="width: 18px; height: 18px;"></i>
+        </button>
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme" data-bs-dismiss="offcanvas">
+          <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
+        </button>
+        <a href="contact.html" class="btn-shield-primary">
+          <span>Quote</span>
+          <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Page Header -->
   <section class="page-header-hero position-relative overflow-hidden">
@@ -114,15 +151,34 @@
               </div>
             </div>
 
-            <!-- Operational Hubs List -->
+            <!-- Operational Hubs & Social Connect List -->
             <div class="pt-4 border-top border-secondary border-opacity-25 mt-auto">
               <h6 class="fw-bold text-info mb-3 text-start">Global Command Hubs</h6>
-              <div class="d-flex flex-wrap gap-2 text-muted small">
+              <div class="d-flex flex-wrap gap-2 text-muted small mb-4">
                 <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇺🇸 New York</span>
                 <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇬🇧 London</span>
                 <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇦🇪 Dubai</span>
                 <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇸🇬 Singapore</span>
                 <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇯🇵 Tokyo</span>
+              </div>
+
+              <h6 class="fw-bold text-white mb-2 text-start">Connect With Command</h6>
+              <div class="d-flex gap-2">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="LinkedIn">
+                  <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Twitter / X">
+                  <i data-lucide="twitter" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Facebook">
+                  <i data-lucide="facebook" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Instagram">
+                  <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="YouTube">
+                  <i data-lucide="youtube" style="width: 18px; height: 18px;"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -175,6 +231,36 @@
                 </button>
               </form>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Global Operations Map Section -->
+  <section class="section-padding position-relative border-top border-secondary border-opacity-25">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="shield-badge mx-auto">
+          <span class="badge-dot"></span>
+          <span>Tactical Map & Dispatch Center</span>
+        </div>
+        <h2 class="section-title text-white">Global Command Operations Map</h2>
+        <p class="section-desc">Locate our 24/7 security dispatch center and physical guard deployment hubs worldwide.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="glass-card p-3 rounded-4 overflow-hidden shadow-lg border border-secondary border-opacity-25">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.25280006546!2d-74.11976373946231!3d40.69767010531581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              width="100%" 
+              height="420" 
+              style="border:0; border-radius: 16px; filter: contrast(1.1) saturate(1.1);" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
       </div>
