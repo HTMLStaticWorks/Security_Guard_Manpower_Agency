@@ -804,6 +804,7 @@ body.hovering-interactive .custom-cursor-follower {
   z-index: 1101 !important;
   position: relative !important;
   padding: 1.25rem 1.5rem !important;
+  border-bottom: 1px solid var(--border-glass) !important;
 }
 
 .offcanvas-header .offcanvas-title {
@@ -811,6 +812,33 @@ body.hovering-interactive .custom-cursor-follower {
   align-items: center !important;
   gap: 12px !important;
   margin: 0 !important;
+}
+
+/* Styled Exit Icon Button in Offcanvas Header */
+.offcanvas-close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border-glass);
+  color: var(--text-main);
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.offcanvas-close-btn:hover,
+.offcanvas-close-btn:focus-visible {
+  background: rgba(239, 68, 68, 0.2) !important;
+  border-color: rgba(239, 68, 68, 0.6) !important;
+  color: #EF4444 !important;
+  transform: rotate(90deg) scale(1.08);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.3);
 }
 
 .offcanvas-body {
@@ -827,25 +855,57 @@ body.hovering-interactive .custom-cursor-follower {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 0.75rem !important;
+  gap: 0.6rem !important;
   width: 100% !important;
   margin-top: auto !important;
   margin-bottom: auto !important;
+  padding: 0 !important;
 }
 
 .offcanvas-body .nav-link {
   font-family: var(--font-heading) !important;
-  font-size: 1.25rem !important;
+  font-size: 1.15rem !important;
   font-weight: 600 !important;
-  color: var(--text-main) !important;
+  color: var(--text-muted) !important;
   text-align: center !important;
-  padding: 8px 16px !important;
-  transition: var(--transition-fast) !important;
+  padding: 10px 24px !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  border: 1px solid transparent !important;
+  text-decoration: none !important;
+  width: 100% !important;
+  max-width: 280px !important;
 }
 
-.offcanvas-body .nav-link:hover,
+.offcanvas-body .nav-link:hover {
+  color: var(--text-main) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  transform: translateY(-1px);
+}
+
+/* Visible & Premium Active State for Mobile/Tab Hamburger Menu */
 .offcanvas-body .nav-link.active {
-  color: var(--accent-cyan) !important;
+  color: #EF4444 !important;
+  background: rgba(239, 68, 68, 0.15) !important;
+  border: 1px solid rgba(239, 68, 68, 0.4) !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.2) !important;
+}
+
+.offcanvas-body .nav-link.active::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #EF4444;
+  box-shadow: 0 0 8px #EF4444;
+  margin-right: 2px;
 }
 
 .offcanvas-actions {
@@ -879,19 +939,98 @@ body.theme-light .offcanvas-header {
   border-left: 1px solid #CBD5E1 !important;
 }
 
-[data-bs-theme="light"] .offcanvas .nav-link,
-[data-theme="light"] .offcanvas .nav-link,
-body.theme-light .offcanvas .nav-link,
-[data-bs-theme="light"] .offcanvas-title,
-[data-theme="light"] .offcanvas-title,
-body.theme-light .offcanvas-title {
+[data-bs-theme="light"] .offcanvas .offcanvas-title,
+[data-theme="light"] .offcanvas .offcanvas-title,
+body.theme-light .offcanvas .offcanvas-title {
   color: #0F172A !important;
 }
 
-[data-bs-theme="light"] .offcanvas .btn-close,
-[data-theme="light"] .offcanvas .btn-close,
-body.theme-light .offcanvas .btn-close {
-  filter: invert(1) grayscale(100%) !important;
+[data-bs-theme="light"] .offcanvas-close-btn,
+[data-theme="light"] .offcanvas-close-btn,
+body.theme-light .offcanvas-close-btn {
+  background: rgba(15, 23, 42, 0.06) !important;
+  border-color: rgba(15, 23, 42, 0.15) !important;
+  color: #0F172A !important;
+}
+
+[data-bs-theme="light"] .offcanvas-close-btn:hover,
+[data-theme="light"] .offcanvas-close-btn:hover,
+body.theme-light .offcanvas-close-btn:hover {
+  background: rgba(239, 68, 68, 0.15) !important;
+  border-color: rgba(239, 68, 68, 0.4) !important;
+  color: #EF4444 !important;
+}
+
+[data-bs-theme="light"] .offcanvas .nav-link,
+[data-theme="light"] .offcanvas .nav-link,
+body.theme-light .offcanvas .nav-link {
+  color: #475569 !important;
+}
+
+[data-bs-theme="light"] .offcanvas .nav-link:hover,
+[data-theme="light"] .offcanvas .nav-link:hover,
+body.theme-light .offcanvas .nav-link:hover {
+  color: #0F172A !important;
+  background: rgba(15, 23, 42, 0.05) !important;
+  border-color: rgba(15, 23, 42, 0.1) !important;
+}
+
+[data-bs-theme="light"] .offcanvas .nav-link.active,
+[data-theme="light"] .offcanvas .nav-link.active,
+body.theme-light .offcanvas .nav-link.active {
+  color: #EF4444 !important;
+  background: rgba(239, 68, 68, 0.12) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.12) !important;
+}
+
+/* Social Connect Icon Buttons (High Visibility across Light/Dark Mode) */
+.social-connect-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #EF4444 !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  text-decoration: none !important;
+}
+
+.social-connect-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+}
+
+.social-connect-btn:hover {
+  background: #EF4444 !important;
+  color: #FFFFFF !important;
+  border-color: #EF4444 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+}
+
+.social-connect-btn:hover svg {
+  stroke: #FFFFFF !important;
+}
+
+[data-bs-theme="light"] .social-connect-btn,
+[data-theme="light"] .social-connect-btn,
+body.theme-light .social-connect-btn {
+  background: rgba(239, 68, 68, 0.08) !important;
+  border-color: rgba(239, 68, 68, 0.35) !important;
+  color: #EF4444 !important;
+}
+
+[data-bs-theme="light"] .social-connect-btn:hover,
+[data-theme="light"] .social-connect-btn:hover,
+body.theme-light .social-connect-btn:hover {
+  background: #EF4444 !important;
+  color: #FFFFFF !important;
 }
 
 /* Navbar Theme & RTL Toggle Icon Buttons */

@@ -68,23 +68,25 @@
         </div>
         <span>SHIELDFORCE</span>
       </h5>
-      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="offcanvas-close-btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Exit Menu" title="Close Menu">
+        <i data-lucide="x" style="width: 22px; height: 22px;"></i>
+      </button>
     </div>
     <div class="offcanvas-body d-flex flex-column align-items-center justify-content-between p-4">
-      <ul class="navbar-nav gap-3 align-items-center text-center w-100 my-auto">
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="index.html" data-bs-dismiss="offcanvas">Home</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="home-v2.html" data-bs-dismiss="offcanvas">Home2</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2 active" href="services.html" data-bs-dismiss="offcanvas">Services</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="industries.html" data-bs-dismiss="offcanvas">Industries</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="careers.html" data-bs-dismiss="offcanvas">Careers</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="contact.html" data-bs-dismiss="offcanvas">Contact</a></li>
+      <ul class="navbar-nav gap-2 align-items-center text-center w-100 my-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-v2.html">Home2</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
       <div class="offcanvas-actions d-flex align-items-center justify-content-center gap-3 w-100 pt-3 border-top border-secondary border-opacity-25">
-        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction" data-bs-dismiss="offcanvas">
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction">
           <i data-lucide="arrow-left-right" style="width: 18px; height: 18px;"></i>
         </button>
-        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme" data-bs-dismiss="offcanvas">
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
           <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
         </button>
         <a href="contact.html" class="btn-shield-primary">
@@ -225,6 +227,73 @@
               </ul>
               <a href="service-details.html" class="btn-shield-secondary w-100 justify-content-center mt-auto">
                 <span>View Service Details</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Deep Dive Service Specifications Section -->
+  <section class="section-padding position-relative overflow-hidden">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="shield-badge mx-auto">
+          <span class="badge-dot"></span>
+          <span>Tactical Infrastructure</span>
+        </div>
+        <h2 class="section-title text-white gsap-fade-up">Deep Dive Service Specifications</h2>
+        <p class="section-desc gsap-fade-up max-w-700 mx-auto">Comprehensive overview of equipment protocols, officer armaments, and command integration standards.</p>
+      </div>
+
+      <div class="glass-card p-4 p-lg-5">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-5">
+            <img src="image/c.jpg" alt="Gear & Tactical Equipment Standard" class="img-fluid rounded-4 shadow-lg border border-secondary border-opacity-25 w-100" style="height: 280px; object-fit: cover;">
+          </div>
+          <div class="col-lg-7">
+            <div class="badge bg-primary bg-opacity-15 text-primary px-3 py-2 rounded-pill fw-bold text-uppercase mb-3">
+              <i data-lucide="shield-check" class="me-1 inline-icon" style="width: 14px; height: 14px;"></i> Enterprise Protection Standard
+            </div>
+            <h3 class="fw-bold text-white mb-2">Gear & Tactical Equipment Standard</h3>
+            <h6 class="text-info fw-semibold mb-3">Certified Military-Grade Personal Protection Equipment & Tactical Gear</h6>
+            <p class="text-muted small mb-4">
+              Every deployed ShieldForce security unit is outfitted with certified military-grade tactical gear, Level IIIA ballistic body armor, encrypted multi-channel satellite radios, and real-time biometric GPS monitoring devices. Our equipment standards exceed federal enterprise protection baselines.
+            </p>
+
+            <div class="row g-3 text-muted small mb-4">
+              <div class="col-sm-6 d-flex align-items-center">
+                <i data-lucide="check-circle" class="text-info me-2 flex-shrink-0" style="width: 16px; height: 16px;"></i>
+                <span>Level IIIA Ballistic Armor & Kevlar Helmets</span>
+              </div>
+              <div class="col-sm-6 d-flex align-items-center">
+                <i data-lucide="check-circle" class="text-info me-2 flex-shrink-0" style="width: 16px; height: 16px;"></i>
+                <span>Encrypted Satellite Comms & Live GPS</span>
+              </div>
+              <div class="col-sm-6 d-flex align-items-center">
+                <i data-lucide="check-circle" class="text-info me-2 flex-shrink-0" style="width: 16px; height: 16px;"></i>
+                <span>First Aid Trauma CPR Defibrillator Kit</span>
+              </div>
+              <div class="col-sm-6 d-flex align-items-center">
+                <i data-lucide="check-circle" class="text-info me-2 flex-shrink-0" style="width: 16px; height: 16px;"></i>
+                <span>Non-Lethal Defense & Body-Worn HD Cam</span>
+              </div>
+              <div class="col-sm-6 d-flex align-items-center">
+                <i data-lucide="check-circle" class="text-info me-2 flex-shrink-0" style="width: 16px; height: 16px;"></i>
+                <span>Mobile Emergency Dispatch Interface</span>
+              </div>
+              <div class="col-sm-6 d-flex align-items-center">
+                <i data-lucide="check-circle" class="text-info me-2 flex-shrink-0" style="width: 16px; height: 16px;"></i>
+                <span>24/7 Command Control Center Sync</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="service-details.html" class="btn-shield-primary">
+                <span>Explore Full Tactical Details</span>
+                <i data-lucide="arrow-right" style="width: 18px; height: 18px;"></i>
+              </a>
+              <a href="contact.html" class="btn-shield-secondary">
+                <span>Request Equipment Spec Sheet</span>
               </a>
             </div>
           </div>

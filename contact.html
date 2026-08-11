@@ -68,23 +68,25 @@
         </div>
         <span>SHIELDFORCE</span>
       </h5>
-      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="offcanvas-close-btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Exit Menu" title="Close Menu">
+        <i data-lucide="x" style="width: 22px; height: 22px;"></i>
+      </button>
     </div>
     <div class="offcanvas-body d-flex flex-column align-items-center justify-content-between p-4">
-      <ul class="navbar-nav gap-3 align-items-center text-center w-100 my-auto">
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="index.html" data-bs-dismiss="offcanvas">Home</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="home-v2.html" data-bs-dismiss="offcanvas">Home2</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="about.html" data-bs-dismiss="offcanvas">About</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="services.html" data-bs-dismiss="offcanvas">Services</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="industries.html" data-bs-dismiss="offcanvas">Industries</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="careers.html" data-bs-dismiss="offcanvas">Careers</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2 active" href="contact.html" data-bs-dismiss="offcanvas">Contact</a></li>
+      <ul class="navbar-nav gap-2 align-items-center text-center w-100 my-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-v2.html">Home2</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
       </ul>
       <div class="offcanvas-actions d-flex align-items-center justify-content-center gap-3 w-100 pt-3 border-top border-secondary border-opacity-25">
-        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction" data-bs-dismiss="offcanvas">
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction">
           <i data-lucide="arrow-left-right" style="width: 18px; height: 18px;"></i>
         </button>
-        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme" data-bs-dismiss="offcanvas">
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
           <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
         </button>
         <a href="contact.html" class="btn-shield-primary">
@@ -106,7 +108,28 @@
         <span>24/7 Command Communications</span>
       </div>
       <h1 class="display-3 fw-bold mb-3 gsap-fade-up">Deploy Your Security Force Today</h1>
-      <p class="section-desc gsap-fade-up">Our risk officers are available 24/7 to provide instant site consultations, guard mobilization, and proposal estimates.</p>
+      <p class="section-desc gsap-fade-up max-w-700 mx-auto">Our risk officers are available 24/7 to provide instant site consultations, guard mobilization, and proposal estimates.</p>
+
+      <!-- Direct Action Buttons & Quick Badges to Eliminate Empty Space -->
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-4 gsap-fade-up">
+        <a href="tel:+18005557443" class="btn-shield-primary">
+          <i data-lucide="phone-call" style="width: 18px; height: 18px;"></i>
+          <span>Emergency Hotline: +1 (800) 555-SHIELD</span>
+        </a>
+        <a href="mailto:dispatch@shieldforce-security.com" class="btn-shield-secondary">
+          <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+          <span>Direct Dispatch Email</span>
+        </a>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-center gap-3 mt-3 text-muted small gsap-fade-up">
+        <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">
+          <i data-lucide="check-circle" class="text-info me-1" style="width: 14px; height: 14px;"></i> 24/7 Live Command
+        </span>
+        <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">
+          <i data-lucide="clock" class="text-info me-1" style="width: 14px; height: 14px;"></i> Guaranteed 30-Min SLA Response
+        </span>
+      </div>
     </div>
   </section>
 
@@ -162,22 +185,22 @@
                 <span class="badge bg-secondary border border-secondary border-opacity-25 px-3 py-2 rounded-pill fw-semibold">🇯🇵 Tokyo</span>
               </div>
 
-              <h6 class="fw-bold text-white mb-2 text-start">Connect With Command</h6>
+              <h6 class="fw-bold text-white mb-3 text-start">Connect With Command</h6>
               <div class="d-flex gap-2">
-                <a href="https://linkedin.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="LinkedIn">
-                  <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-connect-btn" title="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Twitter / X">
-                  <i data-lucide="twitter" style="width: 18px; height: 18px;"></i>
+                <a href="https://twitter.com" target="_blank" rel="noopener" class="social-connect-btn" title="Twitter / X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Facebook">
-                  <i data-lucide="facebook" style="width: 18px; height: 18px;"></i>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-connect-btn" title="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="Instagram">
-                  <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-connect-btn" title="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener" class="btn btn-outline-info btn-sm rounded-circle p-2 d-inline-flex align-items-center justify-content-center" style="width: 40px; height: 40px;" title="YouTube">
-                  <i data-lucide="youtube" style="width: 18px; height: 18px;"></i>
+                <a href="https://youtube.com" target="_blank" rel="noopener" class="social-connect-btn" title="YouTube">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
                 </a>
               </div>
             </div>

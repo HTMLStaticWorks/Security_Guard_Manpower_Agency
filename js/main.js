@@ -70,7 +70,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // (Mobile menu is now handled natively by Bootstrap Offcanvas)
+  // Mobile Offcanvas Menu Controller
+  const mobileOffcanvasEl = document.getElementById('mobileOffcanvas');
+  if (mobileOffcanvasEl) {
+    mobileOffcanvasEl.addEventListener('show.bs.offcanvas', () => {
+      if (typeof lucide !== 'undefined') lucide.createIcons();
+      if (typeof lenis !== 'undefined' && lenis) lenis.stop();
+    });
+
+    mobileOffcanvasEl.addEventListener('hidden.bs.offcanvas', () => {
+      if (typeof lenis !== 'undefined' && lenis) lenis.start();
+    });
+
+    const offcanvasNavLinks = mobileOffcanvasEl.querySelectorAll('.navbar-nav a.nav-link');
+    offcanvasNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const href = link.getAttribute('href');
+        if (href && href !== '#' && typeof bootstrap !== 'undefined') {
+          const bsOffcanvas = bootstrap.Offcanvas.getInstance(mobileOffcanvasEl);
+          if (bsOffcanvas) {
+            bsOffcanvas.hide();
+          }
+        }
+      });
+    });
+  }
 
   // 3. Initialize Lenis Smooth Scroll
   let lenis;

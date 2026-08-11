@@ -82,43 +82,32 @@
 
   <!-- Mobile Offcanvas Menu (Centered Navlinks & Action Buttons) -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas" aria-labelledby="mobileOffcanvasLabel">
-    <div
-      class="offcanvas-header border-bottom border-secondary border-opacity-25 p-4 d-flex justify-content-between align-items-center">
+    <div class="offcanvas-header border-bottom border-secondary border-opacity-25 p-4 d-flex justify-content-between align-items-center">
       <h5 class="offcanvas-title fw-bold d-flex align-items-center gap-2 text-white m-0" id="mobileOffcanvasLabel">
-        <div
-          class="logo-shield-icon bg-gradient-primary rounded p-2 d-inline-flex align-items-center justify-content-center">
+        <div class="logo-shield-icon bg-gradient-primary rounded p-2 d-inline-flex align-items-center justify-content-center">
           <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
         </div>
         <span>SHIELDFORCE</span>
       </h5>
-      <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="offcanvas"
-        aria-label="Close"></button>
+      <button type="button" class="offcanvas-close-btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Exit Menu" title="Close Menu">
+        <i data-lucide="x" style="width: 22px; height: 22px;"></i>
+      </button>
     </div>
     <div class="offcanvas-body d-flex flex-column align-items-center justify-content-between p-4">
-      <ul class="navbar-nav gap-3 align-items-center text-center w-100 my-auto">
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="index.html"
-            data-bs-dismiss="offcanvas">Home</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="home-v2.html"
-            data-bs-dismiss="offcanvas">Home2</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="about.html"
-            data-bs-dismiss="offcanvas">About</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="services.html"
-            data-bs-dismiss="offcanvas">Services</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="industries.html"
-            data-bs-dismiss="offcanvas">Industries</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="careers.html"
-            data-bs-dismiss="offcanvas">Careers</a></li>
-        <li class="nav-item"><a class="nav-link fs-4 fw-semibold text-white py-2" href="contact.html"
-            data-bs-dismiss="offcanvas">Contact</a></li>
+      <ul class="navbar-nav gap-2 align-items-center text-center w-100 my-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="home-v2.html">Home2</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
-      <div
-        class="offcanvas-actions d-flex align-items-center justify-content-center gap-3 w-100 pt-3 border-top border-secondary border-opacity-25">
-        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction"
-          data-bs-dismiss="offcanvas">
+      <div class="offcanvas-actions d-flex align-items-center justify-content-center gap-3 w-100 pt-3 border-top border-secondary border-opacity-25">
+        <button class="nav-icon-btn rtl-toggle-btn" aria-label="Toggle RTL/LTR" title="Toggle RTL/LTR Direction">
           <i data-lucide="arrow-left-right" style="width: 18px; height: 18px;"></i>
         </button>
-        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme"
-          data-bs-dismiss="offcanvas">
+        <button class="nav-icon-btn theme-toggle-btn" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">
           <i data-lucide="sun" style="width: 18px; height: 18px;"></i>
         </button>
         <a href="contact.html" class="btn-shield-primary">
@@ -644,7 +633,7 @@
       <div class="row g-4 align-items-stretch justify-content-center">
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card p-4 w-100 h-100 d-flex flex-column justify-content-between text-center">
-            <div>
+            <div class="d-flex flex-column justify-content-start flex-grow-1">
               <div class="text-warning mb-3 d-flex justify-content-center gap-1">
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
@@ -652,12 +641,13 @@
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
               </div>
-              <p class="text-muted small mb-4">"ShieldForce's executive guard squads transformed our corporate campus
-                security. Their officers exhibit military discipline and impeccable reception."</p>
+              <div class="d-flex align-items-center justify-content-center flex-grow-1 my-2" style="min-height: 90px;">
+                <p class="text-muted small mb-0">"ShieldForce's executive guard squads transformed our corporate campus security. Their officers exhibit military discipline and impeccable reception."</p>
+              </div>
             </div>
-            <div class="testimonial-reviewer">
+            <div class="testimonial-reviewer mt-3 pt-3 border-top border-secondary border-opacity-25 d-flex flex-column align-items-center">
               <img src="image/jnddn.jpg" alt="Col. Robert Sterling" class="rounded-circle mb-2"
-                style="width: 52px; height: 52px; object-fit: cover; border: 2px solid var(--accent-cyan);">
+                style="width: 68px; height: 68px; object-fit: cover; border: 3px solid var(--bs-primary); box-shadow: 0 0 15px rgba(239, 68, 68, 0.35); display: block; margin: 0 auto;">
               <h6 class="fw-bold text-white mb-0">Col. Robert Sterling</h6>
               <span class="text-muted small">VP Corporate Security, FinTech Hub</span>
             </div>
@@ -666,7 +656,7 @@
 
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card p-4 w-100 h-100 d-flex flex-column justify-content-between text-center">
-            <div>
+            <div class="d-flex flex-column justify-content-start flex-grow-1">
               <div class="text-warning mb-3 d-flex justify-content-center gap-1">
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
@@ -674,12 +664,13 @@
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
               </div>
-              <p class="text-muted small mb-4">"The 24/7 AI CCTV monitoring team prevented two perimeter breach attempts
-                at our refinery within the first month. Incredible reaction time."</p>
+              <div class="d-flex align-items-center justify-content-center flex-grow-1 my-2" style="min-height: 90px;">
+                <p class="text-muted small mb-0">"The 24/7 AI CCTV monitoring team prevented two perimeter breach attempts at our refinery within the first month. Incredible reaction time."</p>
+              </div>
             </div>
-            <div class="testimonial-reviewer">
+            <div class="testimonial-reviewer mt-3 pt-3 border-top border-secondary border-opacity-25 d-flex flex-column align-items-center">
               <img src="image/kf.jpg" alt="Elena Rostova" class="rounded-circle mb-2"
-                style="width: 52px; height: 52px; object-fit: cover; border: 2px solid var(--accent-cyan);">
+                style="width: 68px; height: 68px; object-fit: cover; border: 3px solid var(--bs-primary); box-shadow: 0 0 15px rgba(239, 68, 68, 0.35); display: block; margin: 0 auto;">
               <h6 class="fw-bold text-white mb-0">Elena Rostova</h6>
               <span class="text-muted small">Director of Operations, Energy Grid</span>
             </div>
@@ -688,7 +679,7 @@
 
         <div class="col-md-6 col-lg-4 d-flex gsap-fade-up">
           <div class="glass-card p-4 w-100 h-100 d-flex flex-column justify-content-between text-center">
-            <div>
+            <div class="d-flex flex-column justify-content-start flex-grow-1">
               <div class="text-warning mb-3 d-flex justify-content-center gap-1">
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
@@ -696,12 +687,13 @@
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
                 <i data-lucide="star" class="fill-current" style="width:18px;"></i>
               </div>
-              <p class="text-muted small mb-4">"Their diplomatic motorcade escort for our visiting C-suite executives
-                was flawless. Professionalism at the absolute highest level."</p>
+              <div class="d-flex align-items-center justify-content-center flex-grow-1 my-2" style="min-height: 90px;">
+                <p class="text-muted small mb-0">"Their diplomatic motorcade escort for our visiting C-suite executives was flawless. Professionalism at the absolute highest level."</p>
+              </div>
             </div>
-            <div class="testimonial-reviewer">
+            <div class="testimonial-reviewer mt-3 pt-3 border-top border-secondary border-opacity-25 d-flex flex-column align-items-center">
               <img src="image/0.jpg" alt="Marcus Vance" class="rounded-circle mb-2"
-                style="width: 52px; height: 52px; object-fit: cover; border: 2px solid var(--accent-cyan);">
+                style="width: 68px; height: 68px; object-fit: cover; border: 3px solid var(--bs-primary); box-shadow: 0 0 15px rgba(239, 68, 68, 0.35); display: block; margin: 0 auto;">
               <h6 class="fw-bold text-white mb-0">Marcus Vance</h6>
               <span class="text-muted small">Chief Risk Officer, Global Logistics</span>
             </div>
