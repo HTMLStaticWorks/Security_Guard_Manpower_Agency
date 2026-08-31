@@ -118,69 +118,102 @@
     </div>
   </div>
 
-  <!-- Hero Section with Right-Side Video Showcase -->
-  <section class="section-padding position-relative overflow-hidden" style="padding-top: 140px;">
-    <div class="container">
-      <div class="row align-items-center gy-5 min-vh-80">
+  <!-- Hero Section with Right-Side Tactical Showcase -->
+  <section class="hero-showcase-section">
+    <div class="hero-tactical-grid"></div>
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="row align-items-center gy-5">
         <div class="col-lg-6">
-          <div class="shield-badge">
-            <span class="badge-dot"></span>
-            <span>Next-Gen Enterprise Protection</span>
+          <div class="hero-tactical-badge">
+            <span class="badge-status-dot"></span>
+            <span class="badge-text">Next-Gen Enterprise Defense</span>
           </div>
 
-          <h1 class="display-3 fw-bold text-white mb-4 gsap-split-text hero-heading" style="max-width: 600px;">
-            Guarding Your Assets With <span class="text-transparent bg-clip-text"
-              style="background: var(--gradient-shield); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Uncompromising
-              Precision</span>
+          <h1 class="hero-main-title gsap-split-text">
+            Guarding Your Assets With <span class="hero-gradient-text">Uncompromising Precision</span>
           </h1>
 
-          <p class="fs-5 text-muted mb-5 gsap-fade-up" style="max-width: 600px;">
+          <p class="hero-lead-text gsap-fade-up">
             ShieldForce delivers elite tactical security personnel, executive bodyguard protection, and AI-powered CCTV
             surveillance for Fortune 500 enterprises, high-risk industrial facilities, and global diplomatic missions.
           </p>
 
           <div class="d-flex flex-wrap align-items-center gap-3 gsap-fade-up hero-btn-group">
             <a href="contact.html" class="btn-shield-primary">
-              <i data-lucide="shield" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i>
               <span>Deploy Guard Squad</span>
             </a>
             <a href="services.html" class="btn-shield-secondary">
               <span>Explore Security Matrix</span>
-              <i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i>
+              <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
             </a>
           </div>
 
           <!-- Hero Metrics Bar -->
-          <div class="row mt-5 pt-4 border-top border-secondary border-opacity-25 gsap-fade-up">
-            <div class="col-4">
-              <h3 class="fw-bold text-white mb-0 counter-value" data-target="2500" data-suffix="+">0</h3>
-              <p class="text-muted small mb-0">Trained Personnel</p>
+          <div class="hero-stats-strip gsap-fade-up">
+            <div class="hero-stat-item">
+              <div class="stat-num counter-value" data-target="2500" data-suffix="+">2,500+</div>
+              <div class="stat-lbl">Trained Personnel</div>
             </div>
-            <div class="col-4 border-start border-end border-secondary border-opacity-25">
-              <h3 class="fw-bold text-white mb-0 counter-value" data-target="99" data-suffix=".9%">0</h3>
-              <p class="text-muted small mb-0">Client SLA Satisfaction</p>
+            <div class="stat-divider"></div>
+            <div class="hero-stat-item">
+              <div class="stat-num counter-value" data-target="99" data-suffix=".9%">99.9%</div>
+              <div class="stat-lbl">Client SLA Rating</div>
             </div>
-            <div class="col-4">
-              <h3 class="fw-bold text-white mb-0 counter-value" data-target="150" data-suffix="+">0</h3>
-              <p class="text-muted small mb-0">Corporate Hubs</p>
+            <div class="stat-divider"></div>
+            <div class="hero-stat-item">
+              <div class="stat-num counter-value" data-target="150" data-suffix="+">150+</div>
+              <div class="stat-lbl">Corporate Hubs</div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6">
-          <div class="position-relative hero-video-card gsap-fade-up">
-            <video autoplay loop muted playsinline poster="image/221.jpg"
-              class="w-100 rounded-4 shadow-lg border border-secondary border-opacity-25"
-              style="max-height: 480px; object-fit: cover;">
-              <source src="video/7253660-uhd_4096_2160_30fps.mp4" type="video/mp4">
-            </video>
-            <div class="stat-floating-card d-flex" style="bottom: 20px; right: 20px;">
-              <div class="p-2 bg-primary bg-opacity-25 rounded-circle text-info me-2">
-                <i data-lucide="shield-check" style="width: 24px; height: 24px;"></i>
+          <div class="hero-tactical-showcase gsap-fade-up">
+            <div class="hero-tactical-glow"></div>
+            
+            <!-- Top-Left Floating Badge -->
+            <div class="stat-floating-card d-none d-sm-inline-flex" style="top: -24px; left: -16px;">
+              <div class="floating-icon-bubble emerald">
+                <i data-lucide="activity" style="width: 20px; height: 20px;"></i>
               </div>
               <div>
-                <h6 class="fw-bold text-white mb-0">24/7 Live Monitoring</h6>
-                <p class="text-muted small mb-0">Tactical Command Feed</p>
+                <h6 class="fw-bold mb-0">Active Defense Active</h6>
+                <p class="small mb-0 opacity-75">140+ Tactical Squads On-Duty</p>
+              </div>
+            </div>
+
+            <div class="hero-tactical-frame">
+              <div class="hero-hud-topbar">
+                <div class="hero-hud-status">
+                  <span class="hero-hud-dot"></span>
+                  <span>LIVE COMMAND CENTER</span>
+                </div>
+                <div class="d-none d-sm-block text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.1em;">
+                  24/7 ENCRYPTED STREAM
+                </div>
+              </div>
+
+              <div class="position-relative">
+                <span class="hud-corner tl"></span>
+                <span class="hud-corner tr"></span>
+                <span class="hud-corner bl"></span>
+                <span class="hud-corner br"></span>
+
+                <video autoplay loop muted playsinline poster="image/221.jpg" class="hero-video-element">
+                  <source src="video/7253660-uhd_4096_2160_30fps.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <!-- Bottom-Right Floating Badge -->
+            <div class="stat-floating-card" style="bottom: -24px; right: -16px;">
+              <div class="floating-icon-bubble">
+                <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0">24/7 Live Monitoring</h6>
+                <p class="small mb-0 opacity-75">0.4s Avg Incident Dispatch</p>
               </div>
             </div>
           </div>
